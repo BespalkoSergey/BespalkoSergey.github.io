@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="64.0" preserveAspectRatio="xMidYMid meet" version="1.0" viewBox="0.0 -0.0 64.0 64.0" width="64.0" zoomAndPan="magnify">
+ <defs>
+  <clipPath id="A">
+   <path d="m15.903 132c0-65.17 52.83-118 118-118s118 52.83 118 118-52.83 118-118 118-118-52.83-118-118"/>
+  </clipPath>
+  <linearGradient gradientUnits="userSpaceOnUse" id="B" x1="133.9" x2="133.9" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink" y1="13.999" y2="250">
+   <stop offset="0" stop-color="#1d93d2"/>
+   <stop offset="1" stop-color="#38b0e3"/>
+  </linearGradient>
+  <clipPath id="C">
+   <path d="m0 265.9h266.99v-265.9h-266.99z"/>
+  </clipPath>
+  <clipPath id="D">
+   <path d="m0 265.9h266.99v-265.9h-266.99z"/>
+  </clipPath>
+  <clipPath id="E">
+   <path d="m0 265.9h266.99v-265.9h-266.99z"/>
+  </clipPath>
+ </defs>
+ <g transform="matrix(.27119 0 0 -.27119 -4.3127 67.796)">
+  <path clip-path="url(#A)" d="m15.903 132c0-65.17 52.83-118 118-118s118 52.83 118 118-52.83 118-118 118-118-52.83-118-118" fill="url(#B)"/>
+  <g clip-path="url(#C)" id="change1_1">
+   <path d="m95.778 123.37l14-38.75s1.75-3.62 3.62-3.62 29.75 29 29.75 29l31 59.875-77.875-36.5z" fill="#c8daea"/>
+  </g>
+  <g clip-path="url(#D)" id="change2_1">
+   <path d="m114.34 113.44l-2.688-28.562s-1.125-8.75 7.625 0 17.125 15.5 17.125 15.5" fill="#a9c6d8"/>
+  </g>
+  <g clip-path="url(#E)" id="change3_1">
+   <path d="m96.03 121.99l-28.795 9.383s-3.437 1.395-2.333 4.562c0.228 0.653 0.687 1.208 2.062 2.167 6.382 4.447 118.1 44.604 118.1 44.604s3.155 1.062 5.02 0.356c0.852-0.323 1.396-0.688 1.854-2.02 0.167-0.485 0.263-1.516 0.25-2.542-0.01-0.74-0.1-1.425-0.166-2.5-0.68-10.98-21.04-92.918-21.04-92.918s-1.218-4.795-5.583-4.958c-1.592-0.06-3.524 0.263-5.834 2.25-8.565 7.368-38.172 27.265-44.713 31.64-0.37 0.246-0.474 0.567-0.537 0.88-0.092 0.46 0.4 1.034 0.4 1.034s51.552 45.825 52.924 50.633c0.106 0.373-0.293 0.557-0.834 0.396-3.424-1.26-62.78-38.74-69.33-42.88-0.383-0.242-1.457-0.086-1.457-0.086" fill="#fff"/>
+  </g>
+ </g>
+</svg>
