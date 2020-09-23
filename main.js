@@ -177,9 +177,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BtnGroupComponent", function() { return BtnGroupComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var _services_main_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../services/main.service */ "./src/app/services/main.service.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
 
 
 
+
+function BtnGroupComponent_a_5_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Classic CV in PDF ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("download", ctx_r0.getSrc("classic"))("href", ctx_r0.getSrc("classic"), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+} }
 class BtnGroupComponent {
     constructor(mainService) {
         this.mainService = mainService;
@@ -206,38 +216,43 @@ class BtnGroupComponent {
     }
     getSrc(format) {
         const cv = 'assets/cv/';
-        const nameCV = 'Frontend Trainee - Bespalko Sergey';
-        return '' + cv + this.languageOnSite + '/' + nameCV + '.' + format;
+        const nameCV = 'Frontend Developer - Bespalko Sergey';
+        const nameClassicCV = 'Frontend Developer, Bespalko Sergey';
+        if (format !== 'classic')
+            return '' + cv + this.languageOnSite + '/' + nameCV + '.' + format;
+        else
+            return '' + cv + this.languageOnSite + '/' + nameClassicCV + '.' + 'pdf';
     }
 }
 BtnGroupComponent.ɵfac = function BtnGroupComponent_Factory(t) { return new (t || BtnGroupComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_main_service__WEBPACK_IMPORTED_MODULE_1__["MainService"])); };
-BtnGroupComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BtnGroupComponent, selectors: [["app-btn-group"]], decls: 17, vars: 6, consts: [["role", "group", "aria-label", "Button group with nested dropdown", 1, "btn-group"], ["role", "group", 1, "btn-group"], ["id", "btnGroupDrop1", "type", "button", "data-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "false", 1, "btn", "btn-info", "p-3", "dropdown-toggle"], ["aria-labelledby", "btnGroupDrop1", 1, "dropdown-menu"], [1, "dropdown-item", 3, "download", "href"], ["type", "button", 1, "dropdown-item", 3, "click"]], template: function BtnGroupComponent_Template(rf, ctx) { if (rf & 1) {
+BtnGroupComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BtnGroupComponent, selectors: [["app-btn-group"]], decls: 18, vars: 7, consts: [["role", "group", "aria-label", "Button group with nested dropdown", 1, "btn-group"], ["role", "group", 1, "btn-group"], ["id", "btnGroupDrop1", "type", "button", "data-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "false", 1, "btn", "btn-danger", "p-3", "dropdown-toggle"], ["aria-labelledby", "btnGroupDrop1", 1, "dropdown-menu"], ["class", "dropdown-item", 3, "download", "href", 4, "ngIf"], [1, "dropdown-item", 3, "download", "href"], ["type", "button", 1, "dropdown-item", 3, "click"]], template: function BtnGroupComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "button", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "a", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, " PDF ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, BtnGroupComponent_a_5_Template, 2, 2, "a", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "a", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, " PDF ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "a", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, " Word ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "a", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, " Word ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "button", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "button", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "div", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "button", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BtnGroupComponent_Template_button_click_13_listener() { return ctx.changeLanguage("ru"); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "\u0420\u0443\u0441\u0441\u043A\u0438\u0439");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "button", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BtnGroupComponent_Template_button_click_14_listener() { return ctx.changeLanguage("ru"); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, "\u0420\u0443\u0441\u0441\u043A\u0438\u0439");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "button", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BtnGroupComponent_Template_button_click_15_listener() { return ctx.changeLanguage("eng"); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "English");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "button", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BtnGroupComponent_Template_button_click_16_listener() { return ctx.changeLanguage("eng"); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "English");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -246,12 +261,14 @@ BtnGroupComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefine
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.dropdown["cv"][ctx.languageOnSite], " ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.languageOnSite === "eng");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("download", ctx.getSrc("pdf"))("href", ctx.getSrc("pdf"), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("download", ctx.getSrc("docx"))("href", ctx.getSrc("docx"), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.dropdown["language"][ctx.languageOnSite], " ");
-    } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2J0bi1ncm91cC9idG4tZ3JvdXAuY29tcG9uZW50LnNjc3MifQ== */"] });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2J0bi1ncm91cC9idG4tZ3JvdXAuY29tcG9uZW50LnNjc3MifQ== */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BtnGroupComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -389,12 +406,12 @@ class AboutMeComponent {
         this.languageOnSite = 'eng';
         this.br = '<br/>';
         this.aboutMe = {
-            ru: 'Заинтересован в должности Angular Developer.'
+            ru: 'Заинтересован в должности Frontend Developer.'
                 + this.br + 'Быстро изучаю новые технологии и применяю в своей работе.'
                 + this.br + 'Для меня приоритет - эффективная оптимизация рабочего процесса.'
                 + this.br + 'Стремлюсь к личностному и карьерному росту, легко завожу новые контакты.'
                 + this.br + 'Вдохновляет и мотивирует меня это признание достижений и развитие новых навыков.',
-            eng: 'Seeking to become Angular Developer.'
+            eng: 'Seeking to become Frontend Developer.'
                 + this.br + 'Quick in learning new technologies and implementing them effectively at my work.'
                 + this.br + 'Being efficient at optimization of the working process is my main priority.'
                 + this.br + 'Strive for personal and career growth, natural at making new acquaintances.'
@@ -554,6 +571,10 @@ class ContactsComponent {
                 href: 'https://www.linkedin.com/in/sergey-bespalko-4242941aa/',
             }
         };
+        this.title = {
+            ru: 'Нажмите на одно из этого',
+            eng: 'Click on one of this below'
+        };
     }
     ngOnInit() {
         this.getScreenSize();
@@ -579,33 +600,43 @@ class ContactsComponent {
     }
 }
 ContactsComponent.ɵfac = function ContactsComponent_Factory(t) { return new (t || ContactsComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_main_service__WEBPACK_IMPORTED_MODULE_1__["MainService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["DomSanitizer"])); };
-ContactsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ContactsComponent, selectors: [["app-contacts"]], decls: 17, vars: 10, consts: [[1, "col", "d-flex", "justify-content-center"], [1, "contacts", "d-flex", "flex-column", "justify-content-center"], [1, "d-flex", "align-items-center", "mt-3", "text-info", "weight600", "mail", 3, "href"], ["src", "assets/img/mail.svg", "alt", "", 1, "mr-3"], [1, "d-flex", "align-items-center", "my-1", "text-info", "weight600", "tel", 3, "href"], ["src", "assets/img/tel.svg", "alt", "", 1, "mr-3"], [1, "d-flex", "align-items-center", "my-1", "text-info", "weight600", "skype", 3, "href"], ["src", "assets/img/skype.svg", "alt", "", 1, "mr-3"], [1, "d-flex", "align-items-center", "my-1", "text-info", "weight600", "telegram", 3, "href"], ["src", "assets/img/telegram.svg", "alt", "", 1, "mr-3"], [1, "d-flex", "align-items-center", "mb-3", "text-info", "weight600", "linkedin", 3, "href"], ["src", "assets/img/linkedin.svg", "alt", "", 1, "mr-3"]], template: function ContactsComponent_Template(rf, ctx) { if (rf & 1) {
+ContactsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ContactsComponent, selectors: [["app-contacts"]], decls: 22, vars: 11, consts: [[1, "col", "d-flex", "flex-column", "align-items-center", "justify-content-center", "pt-3"], ["role", "alert", 1, "alert", "alert-warning", "alert-dismissible", "fade", "show"], ["type", "button", "data-dismiss", "alert", "aria-label", "Close", 1, "close"], ["aria-hidden", "true"], [1, "contacts", "d-flex", "flex-column", "justify-content-center"], [1, "d-flex", "align-items-center", "text-info", "weight600", "mail", 3, "href"], ["src", "assets/img/mail.svg", "alt", "", 1, "mr-3"], [1, "d-flex", "align-items-center", "my-1", "text-info", "weight600", "tel", 3, "href"], ["src", "assets/img/tel.svg", "alt", "", 1, "mr-3"], [1, "d-flex", "align-items-center", "my-1", "text-info", "weight600", "skype", 3, "href"], ["src", "assets/img/skype.svg", "alt", "", 1, "mr-3"], [1, "d-flex", "align-items-center", "my-1", "text-info", "weight600", "telegram", 3, "href"], ["src", "assets/img/telegram.svg", "alt", "", 1, "mr-3"], [1, "d-flex", "align-items-center", "mb-3", "text-info", "weight600", "linkedin", 3, "href"], ["src", "assets/img/linkedin.svg", "alt", "", 1, "mr-3"]], template: function ContactsComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "a", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "img", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "button", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "span", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "\u00D7");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "a", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "img", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "a", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "img", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "a", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "img", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "a", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "img", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "a", 10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](15, "img", 11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "a", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](11, "img", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "a", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "img", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "a", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](17, "img", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "a", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](20, "img", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.title[ctx.languageOnSite], " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("href", ctx.getSanitizedUrl(ctx.contacts.mail.uri + ctx.contacts.mail.text), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.contacts.mail.text, " ");
@@ -688,11 +719,11 @@ class EducationComponent {
             cbs: {
                 ru: 'CyberBionic Systematics'
                     + this.br + 'Курс Frontend Developer'
-                    + this.br + 'с 02.2020 по 06.2020',
+                    + this.br + 'с 01.2020 по 04.2020',
                 eng: 'CyberBionic Systematics'
                     + this.br + 'Course'
                     + this.br + ' Frontend Developer'
-                    + this.br + '02.2020 - 06.2020'
+                    + this.br + '01.2020 - 04.2020'
             }
         };
     }
@@ -1121,7 +1152,7 @@ class Past5YearsShortComponent {
             + this.spanNoWrapStart + '(8 mths.)' + this.spanNoWrapEnd
             + this.br + 'Assistance in setting up the device, maintenance and quality control'
             + 'for Embossing, Debossing.';
-        this.fieldSysAdmENG = 'Field System Administrator, Freelance, 03.12 - 07.13 '
+        this.fieldSysAdmENG = 'System Administrator, «KROK» University, 03.12 - 07.13 '
             + this.spanNoWrapStart + '(1,3 years)' + this.spanNoWrapEnd
             + this.br + 'Installed and customized Windows and other operating systems,'
             + 'customized software, antivirus protection, drivers, minor computer'
@@ -1141,11 +1172,11 @@ class Past5YearsShortComponent {
         this.salesAssistantRU = 'Продавец-консультант, ТОВ «MTI», с 05.15 по 09.16 '
             + this.spanNoWrapStart + '(1,3 года)' + this.spanNoWrapEnd
             + this.br + 'Обслуживание покупателей, ведение кассовой отчетности.';
-        this.punchingAssistantRU = 'Ассистент мастера, ТОВ «Только Так» с 09.14 по 05.15 '
+        this.punchingAssistantRU = 'Ассистент мастера, ТОВ «Только Так», с 09.14 по 05.15 '
             + this.spanNoWrapStart + '(8 мес.)' + this.spanNoWrapEnd
             + this.br + 'Помощь в настройке аппарата, сопровождение и'
             + 'контроль качества для конгрева, тиснение фольгой.';
-        this.fieldSysAdmRU = 'Выездной сис. админ., Freelance, с 03.2012 по 07.2013 '
+        this.fieldSysAdmRU = 'Cис. админ., Университет "Крок", с 03.2012 по 07.2013 '
             + this.spanNoWrapStart + '(1,3 года)' + this.spanNoWrapEnd
             + this.br + 'Установка и настройка ОС, ПО, антивирусов, драйверов,'
             + 'периферии, замена расходных материалов.';
@@ -1244,37 +1275,37 @@ class WorkExperienceComponent {
         this.br = '<br/>';
         this.spanSmallStart = '<span class="fs9em">';
         this.spanSmallEnd = '</span>';
-        this.frontEndAngularDeveloperRU = 'FrontEnd Angular Developer'
+        this.frontEndAngularDeveloperRU = 'Frontend Angular Developer'
             + this.br + this.spanSmallStart + 'ТОВ «КИБЕРБИОНИК СИСТЕМАТИКС»' + this.spanSmallEnd
-            + this.br + this.spanSmallStart + 'с 07.2020 по по текущий момент' + this.spanSmallEnd
-            + this.br + '- Разработка на Angular 6+, RxJS.'
+            + this.br + this.spanSmallStart + 'с 05.2020 по 09.2020 (4 месяца)' + this.spanSmallEnd
+            + this.br + '- Разработка на Angular 9+, RxJS.'
             + this.br + '- Непосредственное взаимодействие с SASS, UGLIFY,'
             + 'TYPESCRIPT, GULP, WEBPACK, работа с  DOM, API, SVG'
             + 'объектами, AJAX.'
             + this.br + '- Общение с backend разработчиками.'
-            + this.br + '- Перенос UI/UX дизайна в код.'
+            + this.br + '- Перенос UI/UX дизайна в код, jQuery & .Net в Angular9+.'
             + this.br + '- Опыт с Web Sockets, Local Storage, JavaScript'
             + 'встроенными инструментами, т.д.';
-        this.frontEndAngularDeveloperEng = 'FrontEnd Angular Developer'
+        this.frontEndAngularDeveloperEng = 'Frontend Angular Developer'
             + this.br + this.spanSmallStart + 'Ltd. «CYBERBIONIC SYSTEMATICS»' + this.spanSmallEnd
-            + this.br + this.spanSmallStart + '07.2020 - present' + this.spanSmallEnd
-            + this.br + '- Developing in Angular 6+ with RxJS.'
+            + this.br + this.spanSmallStart + '05.2020 - 09.2020 (4 months)' + this.spanSmallEnd
+            + this.br + '- Developing in Angular 9+ with RxJS.'
             + this.br + '- Working with SASS, UGLIFY, TYPESCRIPT, GULP, WEBPACK,'
             + 'DOM, API, SVG objects.'
             + this.br + '- Work hand-in-hand with backend developers.'
-            + this.br + '- Translate UI/UX designs into high-quality code.'
+            + this.br + '- Translate UI/UX designs into high-quality code, jQuery & .Net into Angular9+.'
             + this.br + '- Experience with Web Sockets, Local Storage, JavaScript'
             + 'build tools, etc.';
-        this.frontEndDeveloperRU = 'FrontEnd Developer'
+        this.frontEndDeveloperRU = 'Frontend Developer'
             + this.br + this.spanSmallStart + 'Freelance' + this.spanSmallEnd
-            + this.br + this.spanSmallStart + 'с 02.2020 по 07.2020 (5 months)' + this.spanSmallEnd
-            + this.br + '- Разработка на чистом HTML5, CSS3, JavaScript.'
+            + this.br + this.spanSmallStart + 'с 12.2019 по 05.2020 (5 месяцев)' + this.spanSmallEnd
+            + this.br + '- Разработка разных частей  лэндингов, e-commerce сайтов, корпоративных сайтов используя Wordpress, HTML5, CSS3, JavaScript.'
             + this.br + '- Первые шаги в UI/UX-проектировании, адаптивной и отзывчивой верстки,'
             + 'кросс-браузерности и кросс-платформенности.'
             + this.br + '- Проектировал под мобильную верстку.';
-        this.frontEndDeveloperEng = 'FrontEnd Developer'
+        this.frontEndDeveloperEng = 'Frontend Developer'
             + this.br + this.spanSmallStart + 'Freelance' + this.spanSmallEnd
-            + this.br + this.spanSmallStart + ' 02.2020 - 07.2020 (5 months)' + this.spanSmallEnd
+            + this.br + this.spanSmallStart + '12.2019 - 05.2020 (5 months)' + this.spanSmallEnd
             + this.br + '- Developing using HTML5, CSS3, JavaScript.'
             + this.br + '- First steps in UI / UX design, adaptive and responsive layout,'
             + 'cross-browser and cross-platfor.'
